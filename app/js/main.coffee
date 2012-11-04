@@ -5,8 +5,7 @@ define [
   'cs!js/model/directory'
   'cs!js/model/person'
   'cs!js/layout/directoryPanel'
-  'cs!js/layout/contactAdder'
-], (Header, Directory, Person, DirectoryPanel, ContactAdder) ->
+], (Header, Directory, Person, DirectoryPanel) ->
   new Header $ "body"
   dir = new Directory
   dp = new DirectoryPanel $("body"), dir 

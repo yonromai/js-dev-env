@@ -62,7 +62,7 @@ We are going to implement this feature while making most of the dev workflow.
 
 If you don't have [node.js](http://nodejs.org/) on your machine (how is that even possible? :) ) install it.
 
-Clone this git repo `git clone ???`.
+Clone this git repo `git clone https://github.com/yonromai/js-dev-env.git`.
 
 Go to the project dir `cd js-de-env`
 
