@@ -1,0 +1,19 @@
+{
+  "name": "js-dev-end",
+  "version": "0.0.1",
+  "description": "A working example of js workflow.",
+  "dependencies": {
+    "coffee-script": "1.x.x",
+    "requirejs": "2.x",
+    "jasmine-node": "x",
+    "jquery": "1.7.x",
+    "jsdom":  "0.2.x",
+    "underscore": "x",
+    "path": "x",
+    "watchr": "x",
+    "cli-color": "x",
+    "file": "x"
+  },
+  "author": "Romain Yon <romain@yon.io>",
+  "license": "WTF"
+}
