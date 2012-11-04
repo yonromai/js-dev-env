@@ -8,7 +8,7 @@ var fs = require("fs");
 
 var err = clc.red.bold;
 var notice = clc.yellow;
-var jasmineNodePath = path.join('node_modules', 'jasmine-node', 'bin', 'jasmine-node');
+var jasmineNodePath = path.join('node_modules', '.bin', 'jasmine-node');
 
 function endsWith(str, suffix) {
     return str.indexOf(suffix, str.length - suffix.length) !== -1;
@@ -43,7 +43,7 @@ var sourceWatcher = function(f){
   fs.exists(testPath, function(exists){
     if(exists){
       console.log(notice("Running test in:", path.relative('.',testPath)));
-      exec(jasmineNodePath + " --coffee  " + testPath, puts);
+      exec("node " + jasmineNodePath + " --coffee  " + testPath, puts);
     } else {
       console.log(notice("No test in:", path.relative('.',testPath)));
     }
@@ -54,7 +54,7 @@ var sourceWatcher = function(f){
 var testWatcher = function(f){
   console.log(notice("Saved", path.relative('.',f)));
   console.log(notice("Running this test"));
-  exec(jasmineNodePath + " --coffee  " + f, puts);
+  exec("node " + jasmineNodePath + " --coffee  " + f, puts);
 }
 
 
