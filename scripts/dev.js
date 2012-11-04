@@ -8,7 +8,7 @@ var fs = require("fs");
 
 var err = clc.red.bold;
 var notice = clc.yellow;
-var jasmineNodePath = path.join('node_modules', '.bin', 'jasmine-node');
+var jasmineNodePath = path.join('node_modules', 'jasmine-node', 'bin', 'jasmine-node');
 
 function endsWith(str, suffix) {
     return str.indexOf(suffix, str.length - suffix.length) !== -1;
